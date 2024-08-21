@@ -21,7 +21,6 @@ const getJsonDigimon = async(searchParam, pageParam) => {
 	const result = await fetch(url);
 	const resultJson = await result.json();
 	return resultJson;
-
 }
 
 const createDigimonList = (jsonDigimon) => {
@@ -69,7 +68,7 @@ const createDigimonItem = async (digimon) => {
 }
 
 const createErrorNotFound = (searchParam) =>{
-	const digi_list = document.querySelector('#digi_list');
+	const digi_list = document.querySelector('#field_list');
 	const errorNotFoundMessage = document.createElement('div');
 	errorNotFoundMessage.innerHTML = `
 		<div class="titulo">
