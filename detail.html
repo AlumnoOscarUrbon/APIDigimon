@@ -1,0 +1,46 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">    <!--Font Press Start 2p -->
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <title>Detail Digimon DB</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="css/styles.css" />
+	  <script src="js/script-detail.js" defer></script>
+  </head>
+  <body>
+      <div class="header">
+        <a href="index.html">
+          <img src="images/logo.png" alt="imagen de digimon" class="logo">
+        </a>
+      </div>
+    <main>
+		<div class="main-wrapper">
+      <div class="navbar correctY ">
+        <a class="navbar-item " id="random-digimon" href="#">Al azar</a>
+        <a class="navbar-item " href="fields.html">Fields</a>
+        <form role="search" class="search-form" id="search-form" method="GET">
+          <input class="searchbar " id="search-input" name="id" placeholder="Id..." type="text" /> 
+          <button type="submit" class="navbar-item " id="search-button"><span>Buscar </span>
+            <svg height="13px" class="search-icon correctX" viewBox="0 0 13 13">
+            <path fill="#999999" d="M12,13a1,1,0,0,1-.7-.3L8.62,10A5.5,5.5,0,1,1,10,8.62l2.68,2.68A1,1,0,0,1,12,13ZM5.5,2A3.5,3.5,0,1,0,9,5.5,3.5,3.5,0,0,0,5.5,2Z"/>
+            </svg>
+          </button>
+        </form>
+      </div>
+			<div id="digi_list"></div>
+		</div>
+    </main>
+    <footer>
+      <h1 id="tittle" class="tittle">Proyecto con javascript de Óscar Urbón Risueño</h1>
+    </footer>
+  </body>
+</html>
+
